@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+		<a href="index.html">RUINAYAO</a></div>
+		<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+<dotlottie-player src="https://lottie.host/328af297-9f9f-4e6c-a83f-e573b0287f3b/xUAOuB8fIF.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+      <div class="header-right">
+            <div class="header-right-item">
+			<button onclick="togglePopup()" id="popupButton">Blog+</button>
+				<div id="popupMenu" class="popup-content">
+    			<a href="Welcome.html">Welcome</a>
+    			<a href="Good_Writing.html">Good Writing and Weak Writing</a>
+    			<a href="Online_Advertising.html">Online Advertising</a>
+				</div>			
+			</div>
+            <div class="header-right-item">	
+				<button onclick="togglePopup4()" id="popupP">Portfolio+</button>
+				<div id="popupPortfolio" class="popup-content">
+    			<a href="TREATS_BOX.html">TREATS BOX</a>
+				<a href="FLORAL_WHISPER.html">FLORAL WHISPER</a>
+				<a href="chubbyboba.html">CHUBBYBOBA</a>
+				<a href="Final_book_series.html">FINAL BOOK SERIES</a>
+				<a href="THE_GREEN_ROAD.html">THE GREEN ROAD</a>
+				</div>	
+		  </div>
+        </div>
+		    <script>
+        $(document).ready(function(){
+            $(".header-right-item").mouseenter(function(){
+                $(this).find(".popup-content").stop(true, true).slideDown("slow");
+            }).mouseleave(function(){
+                $(this).find(".popup-content").stop(true, true).slideUp("slow");
+            });
+        });
+    </script>
+    </header>
+    <div class="banner">
+        <img src="./images/banner.png" alt="">
+    </div><!--
+    <div class="banner-i">
+        <img src="./images/banner-i.png" alt="">
+    </div>
+    <div class="card">
+        <div class="card-item">
+            <div class="card-item-img">
+                <img src="./images/i-1.jpg" alt="">
+            </div>
+            <div class="card-item-title">Explore</div>
+        </div>
+        <div class="card-item">
+            <div class="card-item-img">
+                <img src="./images/i-2.jpg" alt="">
+            </div>
+            <div class="card-item-title">Discover</div>
+        </div>
+        <div class="card-item">
+            <div class="card-item-img">
+                <img src="./images/i-3.jpg" alt="">
+            </div>
+            <div class="card-item-title">Experience</div>
+        </div>
+    </div>-->
+    <div class="content">
+        <div class="content-title">Get In Touch</div>
+        <ul>
+            <li>rayao1551812503@gmail.com</li>
+            <li>(555) 555 1234</li>
+        </ul>
+        <div class="content-more">More Ways to Get In Touch</div>
+    </div>
+    <footer>
+        <div class="footer-left">RUINAYAO, Website Built with WordPress.com.</div>
+        <div class="footer-right">
+            <div class="footer-right-item">Blog</div>
+            <div class="footer-right-item">Contact</div>
+        </div>
+    </footer>
+<script>
+    function togglePopup() {
+        var popup = document.getElementById("popupMenu");
+        var button = document.getElementById("popupButton");
+
+        var buttonRect = button.getBoundingClientRect();
+        popup.style.left = buttonRect.left + "px"; 
+        popup.style.top = buttonRect.bottom + "px"; 
+
+        if (popup.style.display === "block") {
+            popup.style.display = "none";
+        } else {
+            popup.style.display = "block";
+        }
+    }
+	    
+	function togglePopup2() {
+        var popup = document.getElementById("popupMenu2");
+        var button = document.getElementById("popupButton2");
+
+        var buttonRect = button.getBoundingClientRect();
+        popup.style.left = buttonRect.left + "px"; 
+        popup.style.top = buttonRect.bottom + "px"; 
+
+        if (popup.style.display === "block") {
+            popup.style.display = "none";
+        } else {
+            popup.style.display = "block";
+        }
+    }
+	function togglePopup3() {
+        var popup = document.getElementById("popupMenu3");
+        var button = document.getElementById("popupButton3");
+
+        var buttonRect = button.getBoundingClientRect();
+        popup.style.left = buttonRect.left + "px"; 
+        popup.style.top = buttonRect.bottom + "px"; 
+
+        if (popup.style.display === "block") {
+            popup.style.display = "none";
+        } else {
+            popup.style.display = "block";
+        }
+    }
+	function togglePopup4() {
+        var popup = document.getElementById("popupPortfolio");
+        var button = document.getElementById("popupP");
+
+        var buttonRect = button.getBoundingClientRect();
+        popup.style.left = buttonRect.left + "px"; 
+        popup.style.top = buttonRect.bottom + "px"; 
+
+        if (popup.style.display === "block") {
+            popup.style.display = "none";
+        } else {
+            popup.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>

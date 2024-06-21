@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Online_Advertising.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+		<a href="index.html">RUINAYAO</a></div>
+		<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+<dotlottie-player src="https://lottie.host/328af297-9f9f-4e6c-a83f-e573b0287f3b/xUAOuB8fIF.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        <div class="header-right">
+            <div class="header-right-item">
+			<button onclick="togglePopup()" id="popupButton">Blog+</button>
+				<div id="popupMenu" class="popup-content">
+    			<a href="Welcome.html">Welcome</a>
+    			<a href="Good_Writing.html">Good Writing and Weak Writing</a>
+    			<a href="Online_Advertising.html">Online Advertising</a>
+				</div>			
+			</div>
+                <div class="header-right-item">	
+				<button onclick="togglePopup4()" id="popupP">Portfolio+</button>
+				<div id="popupPortfolio" class="popup-content">
+    			<a href="TREATS_BOX.html">TREATS BOX</a>
+				<a href="FLORAL_WHISPER.html">FLORAL WHISPER</a>
+				<a href="chubbyboba.html">CHUBBYBOBA</a>
+				<a href="Final_book_series.html">FINAL BOOK SERIES</a>
+				<a href="THE_GREEN_ROAD.html">THE GREEN ROAD</a>
+				</div>	
+		  </div>
+        </div>
+		    <script>
+        $(document).ready(function(){
+            $(".header-right-item").mouseenter(function(){
+                $(this).find(".popup-content").stop(true, true).slideDown("slow");
+            }).mouseleave(function(){
+                $(this).find(".popup-content").stop(true, true).slideUp("slow");
+            });
+        });
+    </script>
+    </header>
+    <div class="Title">
+	 	<div class="horizontal-line"></div>
+			<h1>Online Advertising</h1>
+		<div class="horizontal-line"></div>
+    </div>
+
+<div class="TextContent">
+	<div class="image-gallery">
+    <img src="./images/O1.jpg" alt="o">
+	</div>
+	<p></p>
+    <p>The current state of online advertising is characterized by its prominence and rapid growth. With the widespread adoption of the internet and the increasing use of digital platforms, online advertising has become a dominant force in the advertising industry. It offers businesses a wide range of opportunities to reach their target audiences in a more targeted and measurable way compared to traditional advertising methods.</p>
+  	<p>Advancements in technology have played a significant role in shaping online advertising. Programmatic advertising, which uses algorithms and automated systems to buy and optimize ad placements, has gained traction, allowing advertisers to efficiently reach their desired audience at scale. Additionally, the rise of social media platforms, search engines, and video streaming services has provided advertisers with new channels to connect with consumers.</p>
+  	<p>However, online advertising also faces challenges and concerns. Ad-blocking software has become increasingly popular, posing a threat to the effectiveness of online ads. Privacy concerns have grown as well, with users becoming more aware of the data collected by advertisers and demanding greater control over their personal information. Striking a balance between effective targeting and respecting user privacy has become crucial for advertisers.</p>
+	<p>Furthermore, the online advertising landscape is continuously evolving. Advertisers are exploring new formats, such as native advertising and influencer marketing, to engage with consumers in more authentic ways. The shift towards mobile devices and the rise of ad-supported streaming services have also influenced the way advertisers approach their campaigns.</p>
+	<p>Overall, online advertising continues to be a powerful tool for businesses to reach their target audience effectively. However, it requires adaptation to technological advancements, addressing privacy concerns, and finding creative and engaging ways to connect with users amidst a competitive digital landscape.</p>
+
+</div>
+
+    <div class="content">
+        <div class="content-title">Get In Touch</div>
+        <ul>
+            <li>rayao1551812503@gmail.com</li>
+            <li>(555) 555 1234</li>
+        </ul>
+    </div>
+    <footer>
+        <div class="footer-left">RUINAYAO</div>
+    </footer>
+<script>
+    function togglePopup() {
+        var popup = document.getElementById("popupMenu");
+        var button = document.getElementById("popupButton");
+
+        var buttonRect = button.getBoundingClientRect();
+        popup.style.left = buttonRect.left + "px"; 
+        popup.style.top = buttonRect.bottom + "px"; 
+
+        if (popup.style.display === "block") {
+            popup.style.display = "none";
+        } else {
+            popup.style.display = "block";
+        }
+    }
+	    
+	function togglePopup2() {
+        var popup = document.getElementById("popupMenu2");
+        var button = document.getElementById("popupButton2");
+
+        var buttonRect = button.getBoundingClientRect();
+        popup.style.left = buttonRect.left + "px"; 
+        popup.style.top = buttonRect.bottom + "px"; 
+
+        if (popup.style.display === "block") {
+            popup.style.display = "none";
+        } else {
+            popup.style.display = "block";
+        }
+    }
+	function togglePopup3() {
+        var popup = document.getElementById("popupMenu3");
+        var button = document.getElementById("popupButton3");
+
+        var buttonRect = button.getBoundingClientRect();
+        popup.style.left = buttonRect.left + "px"; 
+        popup.style.top = buttonRect.bottom + "px"; 
+
+        if (popup.style.display === "block") {
+            popup.style.display = "none";
+        } else {
+            popup.style.display = "block";
+        }
+    }
+	function togglePopup4() {
+        var popup = document.getElementById("popupPortfolio");
+        var button = document.getElementById("popupP");
+
+        var buttonRect = button.getBoundingClientRect();
+        popup.style.left = buttonRect.left + "px"; 
+        popup.style.top = buttonRect.bottom + "px"; 
+
+        if (popup.style.display === "block") {
+            popup.style.display = "none";
+        } else {
+            popup.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>
